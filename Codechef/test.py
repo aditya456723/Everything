@@ -1,5 +1,2 @@
-
-a = list(map(str,input().split()))
-print(a)
-for i in a:
-    print(i)
+count = ["count" for x in range(8)]
+print(count)
