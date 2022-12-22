@@ -1,0 +1,12 @@
+create database vi;
+use vi;
+create table hai(name varchar(20),nid int,phno bigint);
+insert into hai values('Chandu',382,5678905432),('Thanu',987,1234567890),('Hema',331,6543278251);
+create view msg as select name,nid from hai where name='Chandu';
+SELECT * FROM msg;
+update msg set name='Puji' where nid=382;
+create view message as select name,nid from hai;
+insert into message values('Amulya',192),('Anu',277);
+select * from message;
+drop view msg;
+drop view message;

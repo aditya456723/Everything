@@ -1,0 +1,14 @@
+create database arithematic;
+use arithematic;
+create table operations(employee_id int not null primary key,employee_name varchar(20), salary int);
+insert into operations values(1,"Ajay",25000);
+insert into operations values(2,"Greshma",55000);
+insert into operations values(3,"Pooja",52000);
+insert into operations values(4,"Bargav",12312);
+select salary + 100 from operations;
+select salary - 100 from operations;
+select employee_id + salary from operations;
+select salary - employee_id from operations;
+select employee_id * salary from operations;
+select salary % 100 from operations;
+select * from operations;
